@@ -7,11 +7,13 @@ class Cards():
     Establish a set of cards
     Reset and shuffle those cards
     Establish Ace as 1 or 11
+    Adding an update
     '''
     deckkey = ['2','3','4','5','6','7','8','9','10','Jack','Queen','King','Ace']*4
     deckval = [2,3,4,5,6,7,8,9,10,10,10,10,[1,11]]*4
     deckdict = dict(zip(deckkey,deckval)) #zipping the keys, values into a dict
     Ace = [1,11]
+    NewKing = 0
 
     def __init__(self,game):
         self.game = game
